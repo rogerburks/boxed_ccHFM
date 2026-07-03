@@ -7,14 +7,19 @@ Build status:
     https://github.com/moretrim/ccHFM/actions/workflows/ci-on-push.yaml
     "Github Workflows"
 
-Community Curated HFM
+Boxed Community Curated HFM
 ---------------------
 
-[Obtain the latest release here.][RELEASE]
+[Obtain original ccHFM's latest release here.][RELEASE]
 
 [RELEASE]: https://github.com/moretrim/ccHFM/releases/tag/v1.0.0
 
-An unauthorised, unaffiliated effort to maintain the [Historical Flavour Mod][HFM] for Victoria II.
+An unauthorised, unaffiliated effort to add bugfixes and some basic flavor to ccHFM, which was an unauthorised, unaffiliated effort to maintain the [Historical Flavour Mod][HFM] for Victoria II.
+
+**I (rogerburks) do not plan to heavily maintain this fork: it is a repository for my own modifications to the game. I am far from perfect as a developer and mod planner (roquesort is much better at both than I am), please be advised that your mileage may vary. I probably will not be especially responsive to issues, but I have good intentions and will try my best! Look at closed pull requests to see the type of detail I would prefer to see in issues.**
+
+What follows is moretrim's (roquesort's) text, which I shamelessly copy here with a few omissions that do not apply to my fork:
+
 HFM development was [discontinued in 2020][discontinued], but this ambitious overhaul mod keeps a
 special place in our hearts.
 
