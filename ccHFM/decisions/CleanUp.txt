@@ -1704,6 +1704,7 @@ political_decisions = {
 			exists = yes
 			is_vassal = yes
 			has_country_modifier = colony_to_be_annexed
+			NOT = { has_country_flag = colony_release_queued }
 			ai = yes
 			OR = {
 				any_greater_power = { has_country_modifier = dismantling_country }
