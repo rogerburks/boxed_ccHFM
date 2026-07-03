@@ -1588,7 +1588,7 @@ gold_rush = {
 }
 
 witwatersrand_gold_rush = {
-	immigrant_attract = 8
+	global_immigrant_attract = 0.5
 	#assimilation_rate = 1
 	prestige = 0.01
 	icon = 11
@@ -3303,8 +3303,62 @@ foreign_weapons_imported = {
 	icon = 9
 }
 
-# CCH
+## CCH
 
 cch.recent-call-to-arms = {
     icon = 15
+}
+
+cch.fadhli-raids = {
+	local_RGO_output = -0.1
+	pop_militancy_modifier = 0.1
+	import_cost = 0.1
+	icon = 18
+}
+
+cch.raiding-aden = {
+	supply_consumption = -0.1
+	import_cost = -0.1
+	icon = 17
+}
+
+cch.kathiri-quaiti-conflict = {
+	global_pop_militancy_modifier = 0.3
+	icon = 18
+}
+
+cch.zaydi-corrupt-overlord = {
+	global_pop_militancy_modifier = 0.5
+	global_pop_consciousness_modifier = 0.5
+	icon = 18
+}
+
+cch.colonial-conference-cooldown = {
+	icon = 5
+}
+
+## Country Workshop
+
+country-workshop.hanseatic-tooltip0 = {
+    icon = 7
+
+    non_accepted_pop_consciousness_modifier = 0.01
+}
+
+country-workshop.hanseatic-tooltip2 = {
+    icon = 7
+
+    non_accepted_pop_consciousness_modifier = 0.01
+}
+
+country-workshop.hanseatic-tooltip3 = {
+    icon = 7
+
+    non_accepted_pop_consciousness_modifier = 0.01
+}
+
+country-workshop.hanseatic-challenger = {
+    icon = 15
+
+    war_exhaustion = -0.01
 }

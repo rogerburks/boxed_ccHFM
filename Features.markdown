@@ -30,13 +30,11 @@ Interface
 
   <figure>
 
-    [![Leader selection screen][leader-selection-screen]][leader-selection-picture]
+    ![Leader selection screen][leader-selection-screen]
 
     [leader-selection-screen]:
       media/leader-selection.png?raw=true
       "Selecting a general for Austria’s third army from among many candidates"
-    [leader-selection-picture]:
-      media/leader-selection.png?raw=true
 
     <figcaption>
 
@@ -53,7 +51,7 @@ Interface
       the post for defence, he should not be employed on the offence due to a disappointing -2
       attack
 
-    </figcaption
+    </figcaption>
   </figure>
 
   The leader stat summary consists of the following, with appropriate colour coding:
@@ -69,7 +67,7 @@ Interface
     <figcaption>
 
     **attack score, defence score, speed modifier, extras**
-    </figcaption
+    </figcaption>
   </figure>
 
   Extras, if present, denote one or two remarkable modifier to organisation and/or morale—think of

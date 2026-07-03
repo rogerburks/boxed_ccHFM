@@ -8,7 +8,38 @@ Releases are save compatible across patch releases for a given minor version. Fo
 
 ### 1.0
 
-#### 1.0.0-prerelease (release in progress)
+#### 1.1.0-dev (in development)
+
+- Allow AI Deseret and AI United States to keep a theocratic government ([#109]). Also add a flag
+  for theocratic United States.
+- Normalise the *Restore America* CB as it had too many quirks and was incomplete in some respects.
+  It now behaves more closely to a unification CB (without the requirement of being a Great Power).
+  This normalisation includes providing a separate CB for annexation purposes.
+- Only allow the *Revoke Kurdish Autonomy* decision to be taken after the conclusion of *the Rise of
+  Bedr Khan* chain. This prevents the Ottoman Empire wrongly returning Persian cores it might have
+  acquired through other means. In addition, the decision now requires 50% Westernisation progress
+  instead of 25% (this matches the unfinished 1.28 HFM branch).
+- Correct the transfer of Natalia cores at the conclusion of *the Battle of Blood River*. This
+  ensures the country makes an appearance in most playthroughs, and makes it playable without having
+  to jump through too many hoops.
+- Restore missing international migration attraction during the *Witwatersrand Gold Rush* (part of
+  [#121]).
+- Restrict British dominion events to the United Kingdom and England ([#119]).
+- Prevent *A Polish State* from targeting colonial countries ([#125]).
+- Neuchâtel will not be annexed unless Switzerland is already around to receive it ([#116]).
+- Prevent the *Treaty of Managua* chain from resetting all tech progress for the Mosquito Kingdom or
+  giving a game-over to the player.
+- Correct overly lax requirements on a couple colonial decisions. This was most visible for the
+  *Show 'Organize Colony' Decisions* declutter decision, which in some cases was available even
+  when no organisation decision was actually up for consideration.
+
+[#109]: https://github.com/moretrim/ccHFM/pull/109
+[#116]: https://github.com/moretrim/ccHFM/issues/116
+[#119]: https://github.com/moretrim/ccHFM/issues/119
+[#121]: https://github.com/moretrim/ccHFM/issues/121
+[#125]: https://github.com/moretrim/ccHFM/issues/125
+
+#### 1.0.0
 
 The first public release, it is based on [HFM 1.27I][]. It is **not** backward compatible with it.
 
@@ -29,13 +60,11 @@ system for customising defaults is planned, but did not make the cut for 1.0.
 
   <figure>
 
-    [![Leader selection screen][leader-selection-screen]][leader-selection-picture]
+    ![Leader selection screen][leader-selection-screen]
 
     [leader-selection-screen]:
       media/leader-selection.png?raw=true
       "Selecting a general for Austria’s third army from among many candidates"
-    [leader-selection-picture]:
-      media/leader-selection.png?raw=true
 
     <figcaption>
 
@@ -52,7 +81,7 @@ system for customising defaults is planned, but did not make the cut for 1.0.
       the post for defence, he should not be employed on the offence due to a disappointing -2
       attack
 
-    </figcaption
+    </figcaption>
   </figure>
 
   (Details further below.)
@@ -119,7 +148,7 @@ system for customising defaults is planned, but did not make the cut for 1.0.
     <figcaption>
 
     **attack score, defence score, speed modifier, extras**
-    </figcaption
+    </figcaption>
   </figure>
 
   Extras, if present, denote one or two remarkable modifier to organisation and/or morale—think of

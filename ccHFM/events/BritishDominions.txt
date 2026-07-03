@@ -10,10 +10,17 @@ country_event = {
 	major = yes
 
 	trigger = {
+        OR = {
+            tag = ENG
+            tag = ENL
+        }
 		war = no
-		year = 1907
+		year = 1890
 		any_owned_province = { is_core = NEW }
-		NOT = { exists = NEW }
+		NOT = {
+			exists = NEW
+			has_country_modifier = cch.colonial-conference-cooldown
+		}
 		is_possible_vassal = NEW
 	}
 
@@ -133,6 +140,10 @@ country_event = {
 	option = {
 		name = "EVT44330OPTB"
 		set_country_flag = NEW_independence_refused
+		add_country_modifier = {
+			name = cch.colonial-conference-cooldown
+			duration = 1000
+		}
 		any_owned = {
 			limit = { is_core = NEW }
 			any_pop = {
@@ -263,10 +274,17 @@ country_event = {
 	major = yes
 
 	trigger = {
+        OR = {
+            tag = ENG
+            tag = ENL
+        }
 		war = no
-		year = 1901
+		year = 1900
 		any_owned_province = { is_core = AST }
-		NOT = { exists = AST }
+		NOT = {
+			exists = AST
+			has_country_modifier = cch.colonial-conference-cooldown
+		}
 		is_possible_vassal = AST
 	}
 
@@ -377,6 +395,10 @@ country_event = {
 	option = {
 		name = "EVT44330OPTB"
 		set_country_flag = AST_independence_refused
+		add_country_modifier = {
+			name = cch.colonial-conference-cooldown
+			duration = 1000
+		}
 		any_owned = {
 			limit = { is_core = AST }
 			any_pop = {
@@ -467,10 +489,17 @@ country_event = {
 	major = yes
 
 	trigger = {
+        OR = {
+            tag = ENG
+            tag = ENL
+        }
 		war = no
 		year = 1907
 		any_owned_province = { is_core = NZL }
-		NOT = { exists = NZL }
+		NOT = {
+			exists = NZL
+			has_country_modifier = cch.colonial-conference-cooldown
+		}
 		is_possible_vassal = NZL
 	}
 
@@ -504,6 +533,10 @@ country_event = {
 	option = {
 		name = "EVT44330OPTA"
 		clr_country_flag = NZL_independence_refused
+		add_country_modifier = {
+			name = cch.colonial-conference-cooldown
+			duration = 1000
+		}
 		prestige = -15
 		badboy = -3
 		any_pop = {
@@ -679,10 +712,17 @@ country_event = {
 	major = yes
 
 	trigger = {
+        OR = {
+            tag = ENG
+            tag = ENL
+        }
 		war = no
 		year = 1909
 		any_owned_province = { is_core = SAF }
-		NOT = { exists = SAF }
+		NOT = {
+			exists = SAF
+			has_country_modifier = cch.colonial-conference-cooldown
+		}
 		is_possible_vassal = SAF
 	}
 
@@ -810,6 +850,10 @@ country_event = {
 	option = {
 		name = "EVT44330OPTB"
 		set_country_flag = SAF_independence_refused
+		add_country_modifier = {
+			name = cch.colonial-conference-cooldown
+			duration = 1000
+		}
 		any_owned = {
 			limit = { is_core = SAF }
 			any_pop = {
@@ -922,6 +966,10 @@ country_event = {
 	picture = "deliberation"
 	
 	trigger = {
+        OR = {
+            tag = ENG
+            tag = ENL
+        }
 		war = no
 		is_vassal = yes
 		is_substate = no
@@ -1041,10 +1089,11 @@ country_event = {
 	picture = "Southpole3"
 	
 	trigger = {
-		OR = {
-			tag = CAN
-			tag = ENG
-		}
+        OR = {
+            tag = ENG
+            tag = ENL
+            tag = CAN
+        }
 		war = no
 		money = 1100
 		OR = {
@@ -1331,11 +1380,18 @@ country_event = {
 	picture = "alaska"
 		
 	trigger = {
+        OR = {
+            tag = ENG
+            tag = ENL
+        }
 		war = no
 		CAN = { war = no }
 		is_our_vassal = CAN
 		year = 1880
-		NOT = { capital_scope = { continent = north_america } }
+		NOT = {
+			capital_scope = { continent = north_america }
+			has_country_modifier = cch.colonial-conference-cooldown
+		}
 		any_owned_province = {
 			region = USA_1
 			controlled_by = THIS
@@ -1400,6 +1456,10 @@ country_event = {
 	
 	option = {
 		name = "EVT44340OPTC"
+		add_country_modifier = {
+			name = cch.colonial-conference-cooldown
+			duration = 1000
+		}
 		USA_1 = {
 			remove_core = THIS
 		}
@@ -1454,13 +1514,14 @@ country_event = {
 	major = yes
 
 	trigger = {
-		OR = {
-			tag = ENG
-			tag = ENL
-		}
+        OR = {
+            tag = ENG
+            tag = ENL
+        }
 		war = no
 		year = 1924
 		any_owned_province = { is_core = RHO }
+		NOT = { has_country_modifier = cch.colonial-conference-cooldown }
 	}
 
 	mean_time_to_happen = {
@@ -1563,6 +1624,10 @@ country_event = {
 	option = {
 		name = "EVT44330OPTB"
 		set_country_flag = RHO_independence_refused
+		add_country_modifier = {
+			name = cch.colonial-conference-cooldown
+			duration = 1000
+		}
 		any_owned = {
 			limit = { is_core = RHO }
 			any_pop = { militancy = 3 }
