@@ -710,6 +710,13 @@ colonial_reconquest_cb = {
 					}
 				tag = MAL
 					}
+				AND = {
+				THIS = { 
+					tag = NET 
+					has_country_flag = tidore_integrated
+					}
+				tag = SAK
+					}
 				}
 			}
 		NOT = { number_of_states = 3 }
