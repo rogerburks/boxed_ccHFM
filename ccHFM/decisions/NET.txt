@@ -67,7 +67,7 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = javanese_integrated
-			JAV = { country_event = 952500 }
+			JAV = { tech_school = unciv_tech_school country_event = 952500 }
 			badboy = 1
 		}
 		
@@ -81,7 +81,7 @@ political_decisions = {
 		picture = moluccan_map
 		potential = {
 			tag = NET
-			AND = {
+			OR = {
 				MAL = { vassal_of = THIS exists = yes civilized = no }
 				SAK = { vassal_of = THIS exists = yes civilized = no }
 			}
@@ -100,8 +100,22 @@ political_decisions = {
 		effect = {
 			set_country_flag = tidore_integrated
 			badboy = 2
-			MAL = { country_event = 952518 }
-			SAK = { country_event = 952519 }
+			random_country = {
+				limit = { exists = yes tag = MAL vassal_of = THIS civilized = no }
+				any_pop = { consciousness = 3 militancy = 1 }
+				tech_school = unciv_tech_school
+				annex_to = THIS
+			}
+			random_country = {
+				limit = { exists = yes tag = SAK vassal_of = THIS civilized = no }
+				any_pop = { consciousness = 3 militancy = 1 }
+				tech_school = unciv_tech_school
+				annex_to = THIS
+			}
+			random_owned = {
+				limit = { owner = { owns = 1453 } }
+				owner = { 1454 = { secede_province = THIS life_rating = 21 } 1560 = { secede_province = THIS life_rating = 21 } } 
+			}
 		}
 		
 		ai_will_do = { 
