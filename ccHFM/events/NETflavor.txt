@@ -94,7 +94,7 @@ country_event = {
 	}
 }
 
-#Anglo-Dutch Treaties of 1870ñ71
+#Anglo-Dutch Treaties of 1870ù71
  country_event = {
 	id = 952503
 	title = "EVTNAME952503" 
@@ -619,5 +619,102 @@ country_event = {
 				relation = { who = PRU value = 175 }
 			}
 		}
+	}
+}
+	
+country_event = {
+	id = 952518
+	title = "EVTNAME952500" #Following Short Declaration to inherit Tidore and Siak
+	desc = "EVTDESC952500"
+	picture = "delhi_sultan"
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVT952500OPTA"		
+		NET = { inherit = MAL }
+		owner = { 1454 = { secede_province = NET life_rating = 21 } 1560 = { secede_province = NET life_rating = 21 } }
+		ai_chance = { factor = 95 }
+	}
+
+	option = {
+		name = "EVT952500OPTB"
+		NET = { country_event = 952520 }
+		leave_alliance = NET
+		end_military_access = NET
+		NET = { release_vassal = MAL }
+		NET = { relation = { who = THIS value = -400 } }
+		NET = { diplomatic_influence = { who = THIS value = -400 } }
+		ai_chance = { factor = 0.05 }
+	}
+}
+	
+country_event = {
+	id = 952519
+	title = "EVTNAME952500" #Following Short Declaration to inherit Tidore and Siak
+	desc = "EVTDESC952500"
+	picture = "delhi_sultan"
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVT952500OPTA"		
+		NET = { inherit = SAK }
+		ai_chance = { factor = 95 }
+	}
+
+	option = {
+		name = "EVT952500OPTB"
+		NET = { country_event = 952521 }
+		leave_alliance = NET
+		end_military_access = NET
+		NET = { release_vassal = SAK }
+		NET = { relation = { who = THIS value = -400 } }
+		NET = { diplomatic_influence = { who = THIS value = -400 } }
+		ai_chance = { factor = 0.05 }
+	}
+}
+
+country_event = {
+	id = 952520
+	title = "EVTNAME952501" #They Refused MAL version
+	desc = "EVTDESC952501"
+	picture = "delhi_sultan"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVT952501OPTA"
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "EVT952501OPTB"
+		prestige = -10
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = 952521
+	title = "EVTNAME952501" #They Refused SAK version
+	desc = "EVTDESC952501"
+	picture = "delhi_sultan"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVT952501OPTA"
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "EVT952501OPTB"
+		prestige = -10
+		ai_chance = { factor = 0 }
 	}
 }
