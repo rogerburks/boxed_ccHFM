@@ -962,7 +962,7 @@ country_event = {
 					}
 				}
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -975,7 +975,7 @@ country_event = {
 				is_cultural_union = no
 				has_country_flag = post_colonial_country
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -988,7 +988,7 @@ country_event = {
 				is_cultural_union = no
 				civilized = no
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -3420,6 +3420,7 @@ country_event = {
 					is_greater_power = yes
 				}
 			}
+			remove_country_modifier = dismantling_country
 			add_country_modifier = { name = dismantling_country duration = 385 }
 		}
 		
@@ -3447,7 +3448,7 @@ country_event = {
 					}
 				}
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -3460,7 +3461,7 @@ country_event = {
 				is_cultural_union = no
 				has_country_flag = post_colonial_country
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -3473,7 +3474,7 @@ country_event = {
 				is_cultural_union = no
 				civilized = no
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -4996,6 +4997,7 @@ country_event = {
 					is_greater_power = yes
 				}
 			}
+			remove_country_modifier = dismantling_country
 			add_country_modifier = { name = dismantling_country duration = 385 }
 		}
 		
@@ -5023,7 +5025,7 @@ country_event = {
 					}
 				}
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -5036,7 +5038,7 @@ country_event = {
 				is_cultural_union = no
 				has_country_flag = post_colonial_country
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -5064,7 +5066,7 @@ country_event = {
 					tag = KMK
 				}
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -5752,6 +5754,7 @@ country_event = {
 					is_greater_power = yes
 				}
 			}
+			remove_country_modifier = dismantling_country
 			add_country_modifier = { name = dismantling_country duration = 385 }
 		}
 		
@@ -5779,7 +5782,7 @@ country_event = {
 					}
 				}
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -5792,7 +5795,7 @@ country_event = {
 				is_cultural_union = no
 				has_country_flag = post_colonial_country
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -5805,7 +5808,7 @@ country_event = {
 				is_cultural_union = no
 				civilized = no
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -6502,6 +6505,7 @@ country_event = {
 					is_greater_power = yes
 				}
 			}
+			remove_country_modifier = dismantling_country
 			add_country_modifier = { name = dismantling_country duration = 385 }
 		}
 		
@@ -6529,7 +6533,7 @@ country_event = {
 					}
 				}
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -6542,7 +6546,7 @@ country_event = {
 				is_cultural_union = no
 				has_country_flag = post_colonial_country
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -6556,7 +6560,7 @@ country_event = {
 				civilized = no
 				NOT = { tag = AOT }
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -7161,6 +7165,7 @@ country_event = {
 					is_greater_power = yes
 				}
 			}
+			remove_country_modifier = dismantling_country
 			add_country_modifier = { name = dismantling_country duration = 385 }
 		}
 		
@@ -7188,7 +7193,7 @@ country_event = {
 					}
 				}
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -7201,7 +7206,7 @@ country_event = {
 				is_cultural_union = no
 				has_country_flag = post_colonial_country
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -7214,7 +7219,7 @@ country_event = {
 				is_cultural_union = no
 				civilized = no
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -7966,6 +7971,7 @@ country_event = {
 					is_greater_power = yes
 				}
 			}
+			remove_country_modifier = dismantling_country
 			add_country_modifier = { name = dismantling_country duration = 385 }
 		}
 		
@@ -7993,7 +7999,7 @@ country_event = {
 					}
 				}
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -8006,7 +8012,7 @@ country_event = {
 				is_cultural_union = no
 				has_country_flag = post_colonial_country
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -8019,7 +8025,7 @@ country_event = {
 				is_cultural_union = no
 				civilized = no
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -8763,6 +8769,7 @@ country_event = {
 					is_greater_power = yes
 				}
 			}
+			remove_country_modifier = dismantling_country
 			add_country_modifier = { name = dismantling_country duration = 385 }
 		}
 		
@@ -8790,7 +8797,7 @@ country_event = {
 					}
 				}
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -8803,7 +8810,7 @@ country_event = {
 				is_cultural_union = no
 				has_country_flag = post_colonial_country
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -8816,7 +8823,7 @@ country_event = {
 				is_cultural_union = no
 				civilized = no
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -9762,6 +9769,7 @@ country_event = {
 					is_greater_power = yes
 				}
 			}
+			remove_country_modifier = dismantling_country
 			add_country_modifier = { name = dismantling_country duration = 385 }
 		}
 		
@@ -9789,7 +9797,7 @@ country_event = {
 					}
 				}
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -9802,7 +9810,7 @@ country_event = {
 				is_cultural_union = no
 				has_country_flag = post_colonial_country
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
@@ -9815,7 +9823,7 @@ country_event = {
 				is_cultural_union = no
 				civilized = no
 			}
-			set_country_flag = colony_release_queued
+			add_country_modifier = { name = colony_release_queued duration = 10 }
 			country_event = 96095
 		}
 		
