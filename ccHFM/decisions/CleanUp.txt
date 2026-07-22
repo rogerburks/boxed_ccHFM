@@ -1695,6 +1695,9 @@ political_decisions = {
 			clr_country_flag = colony_to_be_annexed_flag
 			overlord = { release_vassal = THIS }
 			neutrality = yes
+			civilized = yes
+			country_event = 90910
+			set_country_flag = civilize_ai_countries
 		}
 		ai_will_do = { factor = 1 }
 	}
